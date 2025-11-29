@@ -1,9 +1,9 @@
 {
-  "name": "cli",
+  "name": "@jt-code/cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "bin": {
     "jt-cli": "bin/index.js"
   },
@@ -15,7 +15,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.7.1",
   "dependencies": {
+    "@jt-cli/log": "workspace:*",
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3",
     "import-local": "^3.2.0",
-    "@jt-cli/log":"workspace:*"
+    "path-exists": "^5.0.0",
+    "root-check": "^2.0.0"
   }
 }
